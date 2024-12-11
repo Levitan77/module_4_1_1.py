@@ -1,12 +1,11 @@
-from fake_math import *
-from true_math import *
 
+# Задача "А как делить?": (для module_4_1)
 
-result1 = fake_divide(69, 3)
-result2 = fake_divide(3, 0)
-result3 = true_divide(49, 7)
-result4 = true_divide(15, 0)
-print(result1)
-print(result2)
-print(result3)
-print(result4)
+# В fake_math создайте функцию divide, которая принимает два параметра first и second.
+# Функция должна возвращать результат деления first на second, но когда в second записан 0 - возвращать строку 'Ошибка'.
+
+def divide(first, second):
+    if second == 0:
+        result = 'Ошибка'
+    else:
+        result = first / second
